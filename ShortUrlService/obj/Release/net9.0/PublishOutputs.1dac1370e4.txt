@@ -1,0 +1,9 @@
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\ShortUrlService.exe
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\appsettings.json
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\ShortUrlService.dll
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\ShortUrlService.deps.json
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\ShortUrlService.runtimeconfig.json
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\ShortUrlService.pdb
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\bin\Release\net9.0\publish\Microsoft.OpenApi.dll

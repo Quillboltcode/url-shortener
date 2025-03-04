@@ -1,0 +1,8 @@
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\obj\Debug\net8.0\ShortUrlService.csproj.AssemblyReference.cache
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\obj\Debug\net8.0\ShortUrlService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\obj\Debug\net8.0\ShortUrlService.AssemblyInfoInputs.cache
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\obj\Debug\net8.0\ShortUrlService.AssemblyInfo.cs
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\obj\Debug\net8.0\ShortUrlService.csproj.CoreCompileInputs.cache
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\obj\Debug\net8.0\ShortUrlService.MvcApplicationPartsAssemblyInfo.cs
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\obj\Debug\net8.0\ShortUrlService.MvcApplicationPartsAssemblyInfo.cache
+C:\Freelancing\Grenwich\AMD\project\ShortUrlService\obj\Debug\net8.0\ShortUrlService.sourcelink.json

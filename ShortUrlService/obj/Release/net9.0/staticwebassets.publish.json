@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "p7XVlq5tljH4vKNddJElenKI4/GvR+xB2p3s8qi6Uqk=",
+  "Source": "ShortUrlService",
+  "BasePath": "_content/ShortUrlService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

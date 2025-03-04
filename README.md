@@ -68,14 +68,14 @@ A **URL Shortener** tool that converts long URLs into more manageable, shorter v
 ### Backend
 - **.NET Core**: High-performance backend framework.
 - **Entity Framework Core**: ORM for database operations.
-- **SQLite / PostgreSQL**: Database for storing URLs and metadata.
+- **SQLserver / PostgreSQL**: Database for storing URLs and metadata.
 - **ASP.NET Core MVC**: For building RESTful APIs.
 - **Redis**: Caching frequently accessed URLs.
 - **RabbitMQ**: Message broker for microservices communication.
 
 ### Frontend
 - **Vue.js / React**: For building a user-friendly interface.
-- **CSS/Bootstrap**: For responsive design.
+- **CSS/Bootstrap/Tailwindcss**: For responsive design.
 
 ### Additional Tools
 - **Docker**: For containerized deployment.
@@ -131,15 +131,15 @@ A **URL Shortener** tool that converts long URLs into more manageable, shorter v
 
 The frontend provides an intuitive interface for users to interact with the URL shortener service. Key functionalities include:
 
-URL Input Field: Users can enter a long URL to be shortened.
+- URL Input Field: Users can enter a long URL to be shortened.
 
-Shortened URL Display: Generated short URLs are displayed with a copy button for convenience.
+- Shortened URL Display: Generated short URLs are displayed with a copy button for convenience.
 
-Redirection Handling: Clicking the shortened URL redirects the user to the original URL.
+- Redirection Handling: Clicking the shortened URL redirects the user to the original URL.
 
-History & Statistics (Optional): Users can view previously shortened URLs and their metadata.
+- History & Statistics (Optional): Users can view previously shortened URLs and their metadata.
 
-Responsive Design: Ensures usability across different devices.
+- Responsive Design: Ensures usability across different devices.
 
 ---
 
@@ -147,25 +147,27 @@ Responsive Design: Ensures usability across different devices.
 
 The application is designed with a microservices architecture, separating the User Service and the URL Shortening Service. Key aspects include:
 
-Independent Services: The User Service manages authentication and user-related operations, while the URL Shortening Service handles URL generation and redirection.
+- Independent Services: The User Service manages authentication and user-related operations, while the URL Shortening Service handles URL generation and redirection.
 
-Communication via RabbitMQ: Services communicate asynchronously using RabbitMQ as a message broker.
+- Communication via RabbitMQ: Services communicate asynchronously using RabbitMQ as a message broker.
 
-Scalability: Enables independent scaling of services based on demand.
+- Scalability: Enables independent scaling of services based on demand.
 
-Fault Isolation: Failures in one service do not affect the entire system.
+- Fault Isolation: Failures in one service do not affect the entire system.
 
-Caching Mechanism ⚡
+---
+
+## Caching Mechanism ⚡
 
 To enhance performance and reduce database load, caching is implemented using Redis. The caching strategy includes:
 
-Frequent Access Storage: Popular URLs are cached to minimize database queries.
+- Frequent Access Storage: Popular URLs are cached to minimize database queries.
 
-TTL (Time-to-Live): Cached entries expire after a set duration to ensure up-to-date data.
+- TTL (Time-to-Live): Cached entries expire after a set duration to ensure up-to-date data.
 
-Cache Invalidation: Updates in the database trigger cache updates to prevent stale data.
+- Cache Invalidation: Updates in the database trigger cache updates to prevent stale data.
 
-Improved Read Performance: Significantly reduces response time for frequently accessed URLs.
+- Improved Read Performance: Significantly reduces response time for frequently accessed URLs.
 
 ---
 
@@ -173,13 +175,13 @@ Improved Read Performance: Significantly reduces response time for frequently ac
 
 RabbitMQ is used for asynchronous communication between microservices. This enables:
 
-Decoupled Services: The URL Shortening Service and User Service operate independently.
+- Decoupled Services: The URL Shortening Service and User Service operate independently.
 
-Event-Driven Processing: Events such as URL creation or user sign-up trigger messages that other services can process.
+- Event-Driven Processing: Events such as URL creation or user sign-up trigger messages that other services can process.
 
-Scalability & Reliability: Message queues help balance load and prevent request overloads.
+- Scalability & Reliability: Message queues help balance load and prevent request overloads.
 
-Guaranteed Delivery: Messages persist until processed, ensuring no data loss.
+- Guaranteed Delivery: Messages persist until processed, ensuring no data loss.
 
 ## Docker Deployment 🐳
 

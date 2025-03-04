@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Y3gKS5+D4Kxhua1OrQvk5T54z7d5ZFr+lZn6pwTxYXM=",
+  "Source": "ShortUrlService",
+  "BasePath": "_content/ShortUrlService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,50 @@
+
+version: '3.8'
+
+services:
+  url-shortener:
+    build: .
+    container_name: url-shortener
+    restart: always
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    depends_on:
+      - redis
+      - rabbitmq
+      - db
+    environment:
+      - ConnectionStrings__Database=Host=db;Database=UrlShortenerDb;Username=postgres;Password=yourpassword
+      - Redis__Host=redis
+      - RabbitMQ__Host=rabbitmq
+
+  redis:
+    image: redis:latest
+    container_name: redis-cache
+    restart: always
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"   # RabbitMQ service
+      - "15672:15672" # RabbitMQ management UI
+
+  db:
+    image: postgres:latest
+    container_name: postgres-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_DB: UrlShortenerDb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
